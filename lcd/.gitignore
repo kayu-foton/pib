@@ -1,0 +1,3 @@
+lcd-env/
+*.pyc
+__pycache__/

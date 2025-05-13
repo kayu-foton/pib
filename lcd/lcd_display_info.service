@@ -1,0 +1,15 @@
+[Unit]
+Description=LCD system info display
+After=network.target
+
+[Service]
+ExecStart=/home/pi/dev/pib/lcd/lcd-env/bin/python3 /home/pi/dev/pib/lcd/display_info.py
+WorkingDirectory=/home/pi/dev/pib/lcd
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
