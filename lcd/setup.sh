@@ -14,5 +14,3 @@ if [ -f "requirements.txt" ]; then
 	pip install --upgrade pip
 	pip install -r requirements.txt
 fi
-
-sudo cp ./lcd_display_info.service /etc/systemd/system/

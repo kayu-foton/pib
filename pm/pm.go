@@ -18,7 +18,7 @@ type Program struct {
 }
 
 var programs = []Program{
-	{Dir: "../navmap", Name: "./navmap"},
+	//{Dir: "../navmap", Name: "./navmap"},
 	{Dir: "../lcd", Name: "./run.sh"},
 }
 

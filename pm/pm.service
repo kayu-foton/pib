@@ -1,0 +1,14 @@
+[Unit]
+Description=process manager
+After=network.target
+
+[Service]
+ExecStart=/home/pi/dev/pib/pm/pm
+WorkingDirectory=/home/pi/dev/pib/pm
+StandardOutput=null
+StandardError=null
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
